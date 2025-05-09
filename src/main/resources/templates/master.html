@@ -23,20 +23,20 @@
           <div th:insert="menu :: menu"></div>
             
           <div th:if="${title=='Home'}">
-            <div th:insert="~{home:: header}"></div>
-            <div th:insert="~{home:: about}"></div>
+            <div th:insert="~{home::header}"></div>
+            <div th:insert="~{home::about}"></div>
            </div>
 
            <div th:if="${title=='Projects'}">
-            <div th:insert="projects:: projects"></div>
+            <div th:insert="projects::projects"></div>
            </div>
 
               <div th:if="${title=='Contact'}">
-                <div th:insert="contact:: contact"></div>
+                <div th:insert="contact::contact"></div>
                 </div>
 
                 <div th:if="${title=='Resume'}">
-                    <div th:insert="resume:: resume"></div>
+                    <div th:insert="resume::resume"></div>
                 </div>
 
 
