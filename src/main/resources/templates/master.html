@@ -23,8 +23,8 @@
           <div th:insert="menu :: menu"></div>
             
           <div th:if="${title=='Home'}">
-            <div th:insert="home:: header"></div>
-            <div th:insert="home:: about"></div>
+            <div th:insert="~{home:: header}"></div>
+            <div th:insert="~{home:: about}"></div>
            </div>
 
            <div th:if="${title=='Projects'}">
