@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        
+    </head>
+    <body >
+        
+            <!-- Navigation-->
+           <div th:fragment="projects">
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">E-com website</h2>
+                                            <p>
+                                                Users can browse products (e.g., laptops) with details like name, price, and description.
+
+User registration and login system is functional.
+
+Logged-in users can add products to the cart and place orders.
+
+Admin panel is available to add, update, or delete products.
+
+Image upload for products is working (images are displayed properly).
+
+Product data is stored and fetched from the database successfully.
+
+Users can view order history.
+
+Search and filter functionality works for product listings.
+
+Authentication and authorization work correctly (e.g., normal users can't access admin features).
+                                                                                     
+                                                Backend is optimized for data integrity, performance, and scalability.</p>
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Resume Maker</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">Contact me</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+       
+    </body>
+</html>
